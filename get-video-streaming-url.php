@@ -20,7 +20,7 @@ curl_close($curl);
 // convert json into something that PHP understands
 $data = json_decode($response);
 
-// print_r($data); // uncomment to see the whole object
+// print_r($data); // uncomment to see the whole files object
 
 // Select and print the HLS streaming link from the video properties
 print_r($data->files[4]->link);
